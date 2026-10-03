@@ -176,11 +176,32 @@ th{
 </div>
 
 <!-- Audio file uploaded to the GitHub repository -->
-<audio id="sound" loop preload="auto">
-  <source src="prank.mp3" type="audio/mpeg">
+<audio id="sound" preload="auto" loop>
+  <source src="./prank.mp3" type="audio/mpeg">
+  Your browser does not support audio.
 </audio>
 
 <script>
+function startPrank() {
+  const audio = document.getElementById("sound");
+
+  // Make sure the audio is loaded
+  audio.load();
+
+  audio.play()
+    .then(() => {
+      console.log("Audio started successfully");
+    })
+    .catch((error) => {
+      console.error("Audio error:", error);
+      alert("Audio could not be played. Check that prank.mp3 is uploaded correctly.");
+    });
+
+  document.getElementById("page").style.display = "none";
+  document.getElementById("prank").style.display = "block";
+}
+</script>
+
 function startPrank(){
   const audio = document.getElementById("sound");
 
