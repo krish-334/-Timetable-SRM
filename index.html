@@ -185,29 +185,14 @@ th{
 function startPrank() {
   const audio = document.getElementById("sound");
 
-  // Make sure the audio is loaded
-  audio.load();
-
   audio.play()
-    .then(() => {
+    .then(function() {
       console.log("Audio started successfully");
     })
-    .catch((error) => {
+    .catch(function(error) {
       console.error("Audio error:", error);
-      alert("Audio could not be played. Check that prank.mp3 is uploaded correctly.");
+      alert("Audio could not be played. Check prank.mp3.");
     });
-
-  document.getElementById("page").style.display = "none";
-  document.getElementById("prank").style.display = "block";
-}
-</script>
-
-function startPrank(){
-  const audio = document.getElementById("sound");
-
-  audio.play().catch(function(error){
-    console.log("Audio playback was blocked:", error);
-  });
 
   document.getElementById("page").style.display = "none";
   document.getElementById("prank").style.display = "block";
