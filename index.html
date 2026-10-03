@@ -4,75 +4,194 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Semester Examination – Important Update</title>
+
 <style>
 *{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;background:#f4f6f9;color:#222}
-.header{background:#8b0000;color:#fff;padding:25px 20px;text-align:center}
-.header h1{margin:0;font-size:25px}
-.header p{margin:8px 0 0;font-size:14px}
-.container{max-width:750px;margin:45px auto;padding:0 20px}
-.notice{background:#fff;border-radius:10px;padding:30px;box-shadow:0 4px 15px rgba(0,0,0,.12)}
-.notice h2{margin-top:0;color:#8b0000}
-.important{background:#fff3cd;border-left:5px solid #ffc107;padding:15px;margin:20px 0}
-table{width:100%;border-collapse:collapse;margin:20px 0}
-th,td{border:1px solid #ddd;padding:12px;text-align:left}
-th{background:#8b0000;color:#fff}
-.btn{display:block;width:100%;padding:16px;margin-top:25px;border:0;border-radius:7px;background:#8b0000;color:#fff;font-size:17px;font-weight:bold;cursor:pointer}
-#prank{display:none;text-align:center;padding:80px 20px}
-#prank h1{font-size:46px}
-.footer{text-align:center;color:#777;font-size:12px;margin-top:30px}
+
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:#f4f6f9;
+  color:#222
+}
+
+.header{
+  background:#8b0000;
+  color:#fff;
+  padding:25px 20px;
+  text-align:center
+}
+
+.header h1{
+  margin:0;
+  font-size:25px
+}
+
+.header p{
+  margin:8px 0 0;
+  font-size:14px
+}
+
+.container{
+  max-width:750px;
+  margin:45px auto;
+  padding:0 20px
+}
+
+.notice{
+  background:#fff;
+  border-radius:10px;
+  padding:30px;
+  box-shadow:0 4px 15px rgba(0,0,0,.12)
+}
+
+.notice h2{
+  margin-top:0;
+  color:#8b0000
+}
+
+.important{
+  background:#fff3cd;
+  border-left:5px solid #ffc107;
+  padding:15px;
+  margin:20px 0
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin:20px 0
+}
+
+th,td{
+  border:1px solid #ddd;
+  padding:12px;
+  text-align:left
+}
+
+th{
+  background:#8b0000;
+  color:#fff
+}
+
+.btn{
+  display:block;
+  width:100%;
+  padding:16px;
+  margin-top:25px;
+  border:0;
+  border-radius:7px;
+  background:#8b0000;
+  color:#fff;
+  font-size:17px;
+  font-weight:bold;
+  cursor:pointer
+}
+
+#prank{
+  display:none;
+  text-align:center;
+  padding:80px 20px
+}
+
+#prank h1{
+  font-size:46px
+}
+
+.footer{
+  text-align:center;
+  color:#777;
+  font-size:12px;
+  margin-top:30px
+}
 </style>
 </head>
+
 <body>
 
 <div class="header">
-<h1>SRM Institute of Science and Technology</h1>
-<p>Semester Examination – Important Update</p>
+  <h1>SRM Institute of Science and Technology</h1>
+  <p>Semester Examination – Important Update</p>
 </div>
 
 <div class="container" id="page">
-<div class="notice">
-<h2>📢 Semester Examination – Important Update</h2>
+  <div class="notice">
 
-<div class="important">
-<strong>Important Notice</strong><br><br>
-The revised semester examination timetable has been released.
-Students are requested to check the updated schedule below.
-</div>
+    <h2>📢 Semester Examination – Important Update</h2>
 
-<table>
-<tr><th>Date</th><th>Session</th><th>Subject</th></tr>
-<tr><td>07 Oct 2026</td><td>FN</td><td>Advanced Programming Practice</td></tr>
-<tr><td>09 Oct 2026</td><td>FN</td><td>Operating Systems</td></tr>
-<tr><td>12 Oct 2026</td><td>AN</td><td>Digital Logic</td></tr>
-<tr><td>15 Oct 2026</td><td>FN</td><td>Computer Networks</td></tr>
-</table>
+    <div class="important">
+      <strong>Important Notice</strong><br><br>
+      The revised semester examination timetable has been released.
+      Students are requested to check the updated schedule below.
+    </div>
 
-<p>Please click below to view the complete examination timetable.</p>
+    <table>
+      <tr>
+        <th>Date</th>
+        <th>Session</th>
+        <th>Subject</th>
+      </tr>
 
-<button class="btn" onclick="startPrank()">VIEW EXAMINATION TIMETABLE</button>
+      <tr>
+        <td>07 Oct 2026</td>
+        <td>FN</td>
+        <td>Advanced Programming Practice</td>
+      </tr>
 
-<div class="footer">Please verify examination information through official SRM channels.</div>
-</div>
+      <tr>
+        <td>09 Oct 2026</td>
+        <td>FN</td>
+        <td>Operating Systems</td>
+      </tr>
+
+      <tr>
+        <td>12 Oct 2026</td>
+        <td>AN</td>
+        <td>Digital Logic</td>
+      </tr>
+
+      <tr>
+        <td>15 Oct 2026</td>
+        <td>FN</td>
+        <td>Computer Networks</td>
+      </tr>
+    </table>
+
+    <p>Please click below to view the complete examination timetable.</p>
+
+    <button class="btn" onclick="startPrank()">
+      VIEW EXAMINATION TIMETABLE
+    </button>
+
+    <div class="footer">
+      Please verify examination information through official SRM channels.
+    </div>
+
+  </div>
 </div>
 
 <div id="prank">
-<h1>😂 PRANK!</h1>
-<p>You just got fooled.</p>
+  <h1>😂 PRANK!</h1>
+  <p>You just got fooled.</p>
 </div>
 
+<!-- Audio file uploaded to the GitHub repository -->
 <audio id="sound" loop preload="auto">
-  <source src="audio/prank.mp3" type="audio/mpeg">
+  <source src="prank.mp3" type="audio/mpeg">
 </audio>
-
 
 <script>
 function startPrank(){
-const audio=document.getElementById("sound");
-audio.play().catch(()=>{});
-document.getElementById("page").style.display="none";
-document.getElementById("prank").style.display="block";
+  const audio = document.getElementById("sound");
+
+  audio.play().catch(function(error){
+    console.log("Audio playback was blocked:", error);
+  });
+
+  document.getElementById("page").style.display = "none";
+  document.getElementById("prank").style.display = "block";
 }
 </script>
+
 </body>
 </html>
